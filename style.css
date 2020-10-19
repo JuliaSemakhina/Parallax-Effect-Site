@@ -25,7 +25,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+/*  justify-content: flex-end;*/
   align-items: center;
   padding: 30px;
   max-height: 6vh;
@@ -137,7 +137,7 @@ section h2 {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: clamp(10px, calc(5wv + 2px), 27px);
+  font-size: clamp(10px, calc(10vw + 2px), 27px);
   letter-spacing: 7.5px;
   text-transform: uppercase;
 }
@@ -153,6 +153,11 @@ section h2 {
 }
 
 @media (max-width: 568px) {
+    html, body {
+    overflow-x: hidden;
+    min-width: 100%; 
+  }
+
   .par-one, .par-two, .par-three {
     background-attachment: scroll; 
   }
@@ -166,8 +171,9 @@ section h2 {
 
 @media screen and (max-width: 768px) {
 
-  body {
-    overflow-x:hidden; 
+   html, body {
+    overflow-x: hidden;
+    min-width: 100%; 
   }
 
   .nav__links {
