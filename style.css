@@ -25,10 +25,9 @@ body {
 
 .navbar {
   display: flex;
-/*  justify-content: flex-end;*/
   align-items: center;
   padding: 30px;
-  max-height: 6vh;
+  max-height: 10vh;
   background-color: rgba(193, 177, 169);
   font-family: 'Lobster', sans-serif;
   font-weight: 400;
@@ -137,7 +136,7 @@ section h2 {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: clamp(10px, calc(10vw + 2px), 27px);
+  font-size: clamp(10px, calc(3vw + 2px), 27px);
   letter-spacing: 7.5px;
   text-transform: uppercase;
 }
@@ -179,8 +178,8 @@ section h2 {
   .nav__links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background-color: rgba(193, 177, 169);
     display: flex;
     flex-direction: column;
